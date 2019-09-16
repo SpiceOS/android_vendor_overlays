@@ -120,3 +120,14 @@ PRODUCT_PACKAGES += \
     RetroSwitch \
     StockSwitch \
     TelegramSwitch
+
+# Custom Overlays
+# Settings
+PRODUCT_PACKAGES += \
+    SystemPitchBlackOverlay \
+    SystemDarkGrayOverlay \
+    SystemUIDarkGrayOverlay \
+    SystemStyleOverlay \
+    SystemUIStyleOverlay \
+    SystemNightOverlay \
+    SystemUINightOverlay
