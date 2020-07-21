@@ -27,12 +27,88 @@ DEVICE_PACKAGE_OVERLAYS += vendor/overlays/overlay/fod-icons
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/overlays/overlay/fod-icons
 endif
 
-# Include {Lato,Rubik} fonts
-$(call inherit-product-if-exists, external/google-fonts/lato/fonts.mk)
-$(call inherit-product-if-exists, external/google-fonts/rubik/fonts.mk)
-
 PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,vendor/overlays/overlay/prebuilt/product/fonts,$(TARGET_COPY_OUT_SYSTEM)/fonts)
+    $(call find-copy-subdir-files,*,vendor/overlays/prebuilt/fonts,$(TARGET_COPY_OUT_SYSTEM)/fonts)
 
-# Icon Shapes
-include vendor/overlays/iconshapes.mk
+# Icon shape overlays
+PRODUCT_PACKAGES += \
+    IconShapeCylinderOverlay \
+    IconShapeHexagonOverlay \
+    IconShapeFlowerOverlay \
+    IconShapePebbleOverlay \
+    IconShapeVesselOverlay \
+    IconShapeTaperedRectOverlay
+
+# Accents
+PRODUCT_PACKAGES += \
+    Amber \
+    Black \
+    Blue \
+    BlueGrey \
+    Brown \
+    Cyan \
+    DeepOrange \
+    DeepPurple \
+    Green \
+    Grey \
+    Indigo \
+    LightBlue \
+    LightGreen \
+    Lime \
+    Orange \
+    Pink \
+    Purple \
+    Red \
+    Teal \
+    UserOne \
+    UserTwo \
+    UserThree \
+    UserFour \
+    UserFive \
+    UserSix \
+    UserSeven \
+    Yellow \
+    White
+
+# Brand Accents
+PRODUCT_PACKAGES += \
+    AospaGreen \
+    AndroidOneGreen \
+    CocaColaRed \
+    DiscordPurple \
+    FacebookBlue \
+    InstagramCerise \
+    JollibeeCrimson \
+    MonsterEnergyGreen \
+    NextbitMint \
+    OneplusRed \
+    PepsiBlue \
+    PocophoneYellow \
+    RazerGreen \
+    SamsungBlue \
+    SpotifyGreen \
+    StarbucksGreen \
+    TwitchPurple \
+    TwitterBlue \
+    XboxGreen \
+    XiaomiOrange
+
+# Stub
+PRODUCT_PACKAGES += \
+    MalluOSThemesStub
+
+# Dark Styles
+PRODUCT_PACKAGES += \
+    SystemAmoledBlack \
+    SystemCharcoalBlack \
+    SystemMidnightBlue
+
+# Switch Themes
+PRODUCT_PACKAGES += \
+    ContainedSwitch \
+    MD2Switch \
+    NarrowSwitch \
+    OnePlusSwitch \
+    RetroSwitch \
+    StockSwitch \
+    TelegramSwitch
