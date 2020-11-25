@@ -32,12 +32,7 @@ PRODUCT_COPY_FILES += \
 
 # Icon shape overlays
 PRODUCT_PACKAGES += \
-    IconShapeCylinderOverlay \
-    IconShapeHexagonOverlay \
-    IconShapeFlowerOverlay \
-    IconShapePebbleOverlay \
-    IconShapeVesselOverlay \
-    IconShapeTaperedRectOverlay
+    IconShapeFlowerOverlay
 
 # Accents
 PRODUCT_PACKAGES += \
