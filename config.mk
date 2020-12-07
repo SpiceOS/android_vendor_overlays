@@ -144,5 +144,5 @@ PRODUCT_PACKAGES += \
     SystemUIChocoXOverlay \
     SystemDarkAubergineOverlay \
     SystemUIDarkAubergineOverlay \
-		SystemXtendedClearOverlay \
-    SystemUIXtendedClearOverlay		
+		SystemClearSpringOverlay \
+    SystemUIClearSpringOverlay		
