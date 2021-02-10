@@ -118,6 +118,35 @@ PRODUCT_PACKAGES += \
     StockSwitch \
     TelegramSwitch
 
+# QS tile styles
+PRODUCT_PACKAGES += \
+    QStileDefault \
+    QStileCircleTrim \
+    QStileCircleDualTone \
+    QStileCircleGradient \
+    QStileCookie \
+    QStileCosmos \
+    QStileDividedCircle \
+    QStileDottedCircle \
+    QStileDualToneCircle \
+    QStileInk \
+    QStileInkdrop \
+    QStileJustIcons \
+    QStileMountain \
+    QStileNeonLike \
+    QStileNinja \
+    QStileOreo \
+    QStileOreoCircleTrim \
+    QStileOreoSquircleTrim \
+    QSTileOxygen \
+    QStilePokesign \
+    QStileSquaremedo \
+    QStileSquircle \
+    QStileSquircleTrim \
+    QStileTeardrop \
+    QStileTriangle \
+    QStileWavey
+
 # Custom Overlays
 # Settings
 PRODUCT_PACKAGES += \
@@ -142,4 +171,4 @@ PRODUCT_PACKAGES += \
     SystemDarkAubergineOverlay \
     SystemUIDarkAubergineOverlay \
 		SystemClearSpringOverlay \
-    SystemUIClearSpringOverlay		
+    SystemUIClearSpringOverlay
