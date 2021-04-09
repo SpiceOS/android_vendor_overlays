@@ -27,12 +27,25 @@ DEVICE_PACKAGE_OVERLAYS += vendor/overlays/overlay/fod-icons
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/overlays/overlay/fod-icons
 endif
 
+# Fonts
+include vendor/overlays/fonts.mk
+
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,vendor/overlays/prebuilt/fonts,$(TARGET_COPY_OUT_SYSTEM)/fonts)
 
 # Icon shape overlays
 PRODUCT_PACKAGES += \
-    IconShapeFlowerOverlay
+		IconShapeRoundedRectOverlay \
+		IconShapeSquareOverlay \
+		IconShapeSquircleOverlay \
+		IconShapeTeardropOverlay \
+		IconShapeCylinderOverlay \
+		IconShapeHexagonOverlay \
+		IconShapeFlowerOverlay \
+		IconShapePebbleOverlay \
+		IconShapeVesselOverlay \
+		IconShapeTaperedRectOverlay \
+		IconShapeHeartOverlay
 
 # Accents
 PRODUCT_PACKAGES += \
@@ -90,7 +103,7 @@ PRODUCT_PACKAGES += \
 
 # Stub
 PRODUCT_PACKAGES += \
-    MalluOSThemesStub
+    SpiceOSThemesStub
 
 # Dark Styles
 PRODUCT_PACKAGES += \

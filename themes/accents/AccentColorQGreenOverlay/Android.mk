@@ -17,13 +17,15 @@
 LOCAL_PATH:= $(call my-dir)
 include $(CLEAR_VARS)
 
+LOCAL_RRO_THEME := AccentColorQGreen
+
 LOCAL_PRODUCT_MODULE := true
+
+LOCAL_SRC_FILES := $(call all-subdir-java-files)
 
 LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res
 
-LOCAL_MANIFEST_FILE := AndroidManifest.xml
-
-LOCAL_PACKAGE_NAME := SpiceOSThemesStub
+LOCAL_PACKAGE_NAME := AccentColorQGreenOverlay
 LOCAL_SDK_VERSION := current
 
-include $(BUILD_PACKAGE)
+include $(BUILD_RRO_PACKAGE)

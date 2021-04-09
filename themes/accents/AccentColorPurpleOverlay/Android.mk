@@ -17,13 +17,13 @@
 LOCAL_PATH:= $(call my-dir)
 include $(CLEAR_VARS)
 
+LOCAL_RRO_THEME := AccentColorPurple
+
 LOCAL_PRODUCT_MODULE := true
 
 LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res
 
-LOCAL_MANIFEST_FILE := AndroidManifest.xml
-
-LOCAL_PACKAGE_NAME := SpiceOSThemesStub
+LOCAL_PACKAGE_NAME := AccentColorPurpleOverlay
 LOCAL_SDK_VERSION := current
 
-include $(BUILD_PACKAGE)
+include $(BUILD_RRO_PACKAGE)
