@@ -30,9 +30,6 @@ endif
 # Fonts
 include vendor/overlays/fonts.mk
 
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,vendor/overlays/prebuilt/fonts,$(TARGET_COPY_OUT_SYSTEM)/fonts)
-
 # Icon shape overlays
 PRODUCT_PACKAGES += \
 		IconShapeRoundedRectOverlay \
