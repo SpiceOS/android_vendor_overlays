@@ -157,3 +157,9 @@ PRODUCT_PACKAGES += \
 # Themes
 PRODUCT_PACKAGES += \
     AndroidBlackThemeOverlay
+
+# UDFPS Animations
+ifeq ($(SPICEOS_UDFPS_ANIMATIONS),true)
+PRODUCT_PACKAGES += \
+    UdfpsResources
+endif
