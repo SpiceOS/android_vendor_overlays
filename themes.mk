@@ -153,3 +153,7 @@ PRODUCT_PACKAGES += \
     OdinSignalOverlay \
     PillsSignalOverlay \
     RomanSignalOverlay
+
+# Themes
+PRODUCT_PACKAGES += \
+    AndroidBlackThemeOverlay
