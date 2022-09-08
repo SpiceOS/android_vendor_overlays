@@ -153,33 +153,3 @@ PRODUCT_PACKAGES += \
     OdinSignalOverlay \
     PillsSignalOverlay \
     RomanSignalOverlay
-
-# Navbar
-PRODUCT_PACKAGES += \
-    NavigationBarNoHintOverlay
-
-# Rounded Styles
-#PRODUCT_PACKAGES += \
-#    StockRounded \
-#    NoneRounded \
-#    SlightRounded \
-#    MediumRounded \
-#    HighRounded \
-#    ExtremeRounded
-
-# Switch styles
-#PRODUCT_PACKAGES += \
-#    SwitchAOSP \
-#    SwitchAndroid12 \
-#    SwitchContained \
-#    SwitchTelegram \
-#    SwitchRetro \
-#    SwitchMD2 \
-#    SwitchOOS
-
-# Stub
-PRODUCT_PACKAGES += \
-    SpiceOSThemesStub
-
-# Plugins
-#-include packages/apps/PotatoPlugins/plugins.mk
